@@ -1,0 +1,28 @@
+>>>> Idéia inicial:
+
+O usuário deverá entrar com uma entrada (a frase a ser performada a operação de criptografia) e uma chave simétrica. 
+
+O algoritmo funcionará da seguinte forma:
+
+1. Para cada letra da entrada, obtém-se a posição da letra no alfabeto:
+
+Exemplo: DEFA = 4 5 6 1
+
+1 2 3 4 5 6 7 8 9 10 11 12 13 14
+A B C D E F G H I J  K  L  M  N
+
+Em seguida, aplica-se uma transformação númerica na chave simétrica afim de se obter um valor para aquela frase.
+SENHA = ? = 15
+
+Após isso, aplicamos a seguinte fórmula para cada letra: Letra = (PosiçãoInicial * 2) + ValorNumericoChave
+
+D = (4 * 2) + 15 = 8 + 15 = 23 = X
+
+
+Para descriptografar, a fórmula utilizada é: Letra = (PosiçãoTransformada - ValorNumericoChave) / 2
+
+X = (23 - 15) / 2 = 4 = D
+
+
+
+
